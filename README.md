@@ -18,26 +18,3 @@ After installing Python, clone this repository to your local machine:
 ```bash
 git clone https://github.com/triobaba/text-to-image-generator.git
 
-cd text-to-image-generator
-
-pip install -r requirements.txt
-
-
-## Usage
-To run the application, execute the following command in the project directory:
-
-python app.py
-
-
-
-A window will open with a text input field and a "Generate Image" button. Enter your text in the input field and click the button to generate an image.
-
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-License
-MIT
-
-```
- 
- 
