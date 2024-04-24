@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "text-to-image-generator"
+version = "0.1.0"
+description = "A text to image generator app using stable diffusion"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = 'false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend ="poetry.core.masonry.api"
