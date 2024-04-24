@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Text to Image Generator
 
 This project is a simple Text to Image generator built with Python, Tkinter, and PyTorch. It uses a pretrained model from StabilityAI to generate images based on the input text.
@@ -50,3 +51,7 @@ MIT
 
  
  
+=======
+# AI-text_image_app
+ A text to image application built on stable diffusion 
+>>>>>>> main
