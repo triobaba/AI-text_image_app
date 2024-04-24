@@ -34,6 +34,11 @@ python ./src/app.py
 ```
 
 
+## App interface 
+
+![App interface](images/app_interface.png)
+
+
 A window will open with a text input field and a "Generate Image" button. Enter your text in the input field and click the button to generate an image.
 
 # Contributing
