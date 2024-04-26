@@ -31,20 +31,24 @@ def generate_image():
     model_path = "/Users/triobaba/model.pt_1"
     input_text = text_input.get()
 
-    #if os.path.isfile(model_path):
-        # Load the model from the file
-    #model = torch.load(model_path)
-    #else:
+    #i
     
        
  # Download the model and save it to a file
-    model_id="stabilityai/stable-diffusion-2"
-    scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
-    model= DiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-2", scheduler=scheduler,torch_dtype=torch.float32, use_safetensors=True, variant="fp16",use_auth_token=AuthToken)
-    torch.save(model, model_path)
-        
-    num_images=2
-    images_per_row=1
+   
+
+
+    if os.path.isfile(model_path):
+        #Load the model from the file
+        model = torch.load(model_path)
+    else:
+        model_id="stabilityai/stable-diffusion-2" #downloads the model from the huggingface model hub
+        scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
+        model= DiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-2", scheduler=scheduler,torch_dtype=torch.float32, use_safetensors=True, variant="fp16",use_auth_token=AuthToken)
+        torch.save(model, model_path)
+        num_images=2
+
+        images_per_row=1
 
     frame = tk.Frame(app)
     frame.place(x=10, y=90)
